@@ -19,7 +19,7 @@ public class RedisServiceImpl implements  RedisService {
         redisTemplate.opsForValue().set(phone, code, 5, TimeUnit.MINUTES);
 
     }
-
+    //github在线修改
     @Override
     public String get(String phone) {
         String o = (String)redisTemplate.opsForValue().get(phone);
